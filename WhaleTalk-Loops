@@ -1,0 +1,23 @@
+let input = 'Hello my dear children!';
+let vowels = ['a','e','i','o','u'];
+let resultArray = [];
+
+for (let inputIndex = 0; inputIndex < input.length; inputIndex++) {
+ // console.log(`inputIndex for ${input[inputIndex]} is ${inputIndex}`);
+  for (let indexVowels = 0; indexVowels < vowels.length; indexVowels++) {
+    // console.log(`indexVowels for ${vowels[indexVowels]} is ${indexVowels}`);
+    if (input[inputIndex] === vowels[indexVowels]) {
+        resultArray.push(input[inputIndex]);
+        }
+  }
+  if (input[inputIndex] === 'e' ){
+      resultArray.push(input[inputIndex]);
+      }
+  if (input[inputIndex] === 'u' ){
+      resultArray.push(input[inputIndex]);
+      }
+}
+console.log(resultArray.join('').toUpperCase());
+console.log(resultArray)
+
+// result is EEOEEAIEE
